@@ -1,0 +1,54 @@
+:root{
+  --size: 17.5px;
+
+  --margin_left: 1rem;
+  --margin_right: var(--margin_left);
+  --margin_top:1rem;
+  --margin_bottom:var(--margin_top);
+  
+}
+
+div#leftbar{
+  width: 240px;
+}
+
+
+/* ICONES */ 
+img#logo{
+  height:50px; width:125px;
+  margin-left:0.25rem;
+}
+img.icon {
+  width:var(--size);
+  height:var(--size);
+  margin-left:0.25rem;
+}
+
+
+/* BOUTONS */ 
+div#list{
+  margin: var(--margin_top) var(--margin_left) var(--margin_bottom) var(--margin_right);
+  cursor:pointer;
+  display:block;
+}
+div#list_component{
+  display:flex;
+  border-radius: var(--border-radius);
+  padding:0.7rem;
+  width:auto-fit;
+}
+
+
+/* TEXTES */ 
+span.text{
+  color:white;
+  font-size:var(--size);
+  font-weight: 800;
+  margin-left:var(--margin_left);
+}
+
+
+/* SURVOLÉS */ 
+div#list_component:hover, span.text:hover{
+  background-color:#282828;
+}

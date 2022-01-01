@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Spotify - Lecteur Web</title>
+  <meta charset="UTF-8">
+  <html lang="en-FR">
+  <link rel="stylesheet" href="css/layout_page.css">
+  <link rel="stylesheet" href="css/leftbar.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/media_queries.css">
+  <link rel="icon" type="image/png" href="images/tab_logo.png" />
+  <meta name="viewport" content="widthpdevice-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+  <div class="container linear-gradient">
+    <!--  LEFTBAR  -->
+    <div id="leftbar">
+      <div id="list">
+        <img id="logo" src="images/leftbar/logo.png"></img>
+        <a href="#"><div id="list_component"><img class="icon" src="/images/leftbar/accueil.png"></img><span class="text">Accueil</span></div></a>
+        <a href="#"><div id="list_component"><img class="icon" src="/images/leftbar/loupe.png"></img><span class="text">Rechercher</span></div></a>
+        <a href="#"><div id="list_component"><img class="icon" src="/images/leftbar/bibliotheque.png"></img><span class="text">Bibliothèques</span></div></a>
+        <a href="#"><div id="list_component"><img class="icon" src="/images/leftbar/ajouter.png"></img><span class="text">Créer une playlist</span></div></a>
+        <a href="#"><div id="list_component"><img class="icon" src="/images/leftbar/titres_aimes.png"></img><span class="text">Titres aimés</span></div></a>
+        <a href="#"><div id="list_component"><img class="icon" src="/images/leftbar/episodes.png"></img><span class="text">Vos épisodes</span></div></a>
+        <hr>
+      </div>
+    </div>
+
+    <!--  CONTENT  -->
+    <div class="main main_scroller">
+      <div id="navbar">
+        <div id="buttons">
+          <button class="sub_btn"><span class="text_btn">S'ABONNER</span></button>
+          <a src="#">
+            <button class="nav_btn"><span class="text_btn"> &#60; </span></button>
+          </a>
+          <button class="nav_btn"><span class="text_btn"> &#62; </span></button>
+        </div>
+      </div>
+      <h1>Bonjour</h1>
+      <div class="favoris main_scroller">
+        <div class="tuile_horizontale1"><img class="pochette_horizontale">
+          <img src="images/main/latest_views/echelon.png"></img>
+          <p class="title">Échelon, Vol 1</p>
+        </div>
+        <div class="tuile_horizontale2"><img class="pochette_horizontale"
+src="images/main/latest_views/etrange_histoire.png"></img>
+          <p class="title">L'Étrange Histoire de M.Anderson</p>
+        </div>
+        <div class="tuile_horizontale3"><img class="pochette_horizontale"
+            src="images/main/latest_views/ce_monde_est_cruel.png"></img>
+          <p class="title">Ce Monde Est Cruel</p>
+        </div>
+        <div class="tuile_horizontale4"><img class="pochette_horizontale"
+            src="images/main/latest_views/athanor.png"></img>
+          <p class="title">Athanor</p>
+        </div>
+        <div class="tuile_horizontale5"><img class="pochette_horizontale"
+            src="images/main/latest_views/jeannine.png"></img>
+          <p class="title">Jeannine</p>
+        </div>
+        <div class="tuile_horizontale6"><img class="pochette_horizontale"
+            src="images/main/latest_views/nqntmqmqmb.png"></img>
+          <p class="title">NQNTMQMQMB</p>
+        </div>
+        <div class="tuile_horizontale7"><img class="pochette_horizontale"
+            src="images/main/latest_views/bitch.png"></img>
+          <p class="title">Bitch</p>
+        </div>
+        <div class="tuile_horizontale8"><img class="pochette_horizontale"
+            src="images/main/latest_views/horizon_vertical.png"></img>
+          <p class="title">Horizon Vertical</p>
+        </div>
+        <div class="tuile_horizontale9"><img class="pochette_horizontale"
+            src="images/main/latest_views/agartha.png"></img>
+          <p class="title">Agartha</p>
+        </div>
+        <div class="tuile_horizontale10"><img class="pochette_horizontale"
+            src="images/main/latest_views/echelon.png"></img>
+          <p class="title">Échelon</p>
+        </div>
+      </div>
+      <h2>Mes Albums</h2>
+      <div class="albums main_scroller">
+        <div class="tuile1">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_ipseite.png"></img>
+            <div class="text_content">
+              <p class="title">Ipseité</p>
+              <p class="author">Damso</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile2">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_nqnt33.png"></img>
+            <div class="text_content">
+              <p class="title">NQNT33</p>
+              <p class="author">Vald</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile3">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/brassens_8.png"></img>
+            <div class="text_content">
+              <p class="title">Vol 8 </p>
+              <p class="author">Brassens</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile4">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_nqnt.png"></img>
+            <div class="text_content">
+              <p class="title">NQNT</p>
+              <p class="author">Vald</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile5">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_repenti.png"></img>
+            <div class="text_content">
+              <p class="title">Repenti</p>
+              <p class="author">Renan Luce</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile6">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_civilisation.png"></img>
+            <div class="text_content">
+              <p class="title">Civilisation</p>
+              <p class="author">Orelsan</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile7">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_family_dinner.png"></img>
+            <div class="text_content">
+              <p class="title">Family Dinner</p>
+              <p class="author">Snarky Puppy</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile8">
+          <div id="content">
+            <img class="pochette" src="images/main/latest_views/bitch.png"></img>
+            <div class="text_content">
+              <p class="title">Bitch</p>
+              <p class="author">Lefa</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile9">
+          <div id="content">
+            <img class="pochette" src="images/main/latest_views/nqntmqmqmb.png"></img>
+            <div class="text_content">
+              <p class="title">NQNTMQMQMB</p>
+              <p class="author">Vald</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Conçu pour vous</h2>
+      <div class="albums main_scroller">
+        <div class="tuile1">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_echelon.png"></img>
+            <div class="text_content">
+              <p class="title">Échelon</p>
+              <p class="author">Vald</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile2">
+          <div id="content">
+            <img class="pochette" src="images/main/latest_views/jeannine.png"></img>
+            <div class="text_content">
+              <p class="title">Évidemment</p>
+              <p class="author">Jeannine</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile3">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_civilisation.png"></img>
+            <div class="text_content">
+              <p class="title">Du propre</p>
+              <p class="author">Orelsan</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile4">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_ipseite.png"></img>
+            <div class="text_content">
+              <p class="title">Ξ.Une âme pour deux</p>
+              <p class="author">Damso</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile5">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/mix_pop.png"></img>
+            <div class="text_content">
+              <p class="title">Mix Pop</p>
+              <p class="author">Stromae et bien d'autres <p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile6">
+          <div id="content">
+            <img class="pochette" src="images/main/latest_views/nqntmqmqmb.png"></img>
+            <div class="text_content">
+              <p class="title">Hippopotomonstrosesquippedaliophobie</p>
+              <p class="author">Vald</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile7">
+          <div id="content">
+            <img class="pochette" src="images/main/latest_views/jeannine.png"></img>
+            <div class="text_content">
+              <p class="title">Dave Grohl</p>
+              <p class="author">Lomepal</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile8">
+          <div id="content">
+            <img class="pochette" src="images/main/latest_views/nqntmqmqmb.png"></img>
+            <div class="text_content">
+              <p class="title">NQNT</p>
+              <p class="author">Vald</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile9">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/mix.jpg"></img>
+            <div class="text_content">
+              <p class="title">Mix 2021</p>
+              <p class="author">Vos titres favoris</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Écoutés récemment</h2>
+      <div class="albums main_scroller">
+        <div class="tuile1">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_repenti.png"></img>
+            <div class="text_content">
+              <p class="title">La lettre</p>
+              <p class="author">Renan Luce</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile2">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_ipseite.png"></img>
+            <div class="text_content">
+              <p class="title">Z.Kietu</p>
+              <p class="author">Damso</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile3">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_agartha.png"></img>
+            <div class="text_content">
+              <p class="title">Neo</p>
+              <p class="author">Vald</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile4">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_family_dinner.png"></img>
+            <div class="text_content">
+              <p class="title">Sing to the moon</p>
+              <p class="author">Snarky Puppy</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile5">
+          <div id="content">
+            <img class="pochette" src="images/main/latest_views/jeannine.png"></img>
+            <div class="text_content">
+              <p class="title">Mômes</p>
+              <p class="author">Lomepal</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile6">
+          <div id="content">
+            <img class="pochette" src="images/main/latest_views/ce_monde_est_cruel.png"></img>
+            <div class="text_content">
+              <p class="title">No Friends</p>
+              <p class="author">Vald</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile7">
+          <div id="content">
+            <img class="pochette" src="images/main/latest_views/etrange_histoire.png"></img>
+            <div class="text_content">
+              <p class="title">Ipseité</p>
+              <p class="author">Laylow</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile8">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_civilisation.png"></img>
+            <div class="text_content">
+              <p class="title">Manisfeste</p>
+              <p class="author">Orelsan</p>
+            </div>
+          </div>
+        </div>
+        <div class="tuile9">
+          <div id="content">
+            <img class="pochette" src="images/main/albums/album_ipseite.png"></img>
+            <div class="text_content">
+              <p class="title">Δ.Dieu ne ment jamais</p>
+              <p class="author">Damso</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  FOOTER  -->
+    <div id="footer">
+      <div id="box">
+        <div id="left_box">
+
+          
+          <div class="singer_content">
+            <p class="footer_title">Δ.Dieu ne ment jamais</p>
+            <p class="footer_singer">Damso</p>
+          </div>
+
+
+
+        </div>
+        <div id="middle_box">
+
+
+          <div class="sound_player">
+            <div class="sound_buttons">
+              <button class="shuffle_btn" data-title="Activer la lecture aléatoire"></button>
+              <button class="precedent_btn" data-title="Précédent"></button>
+              <button class="play_btn" data-title="Lecture"></button>
+              <button class="next_btn" data-title="Suivant"></button>
+              <button class="loop_btn" data-title="Activer la répétition"></button>
+            </div>
+            <div class="sound_progress">
+              <progress value="25" max="100"></progress>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div id="right_box">
+          <div class="options">
+            <progress class="sound_volume"value="66" max="100"></progress>
+            <button class="sound_volume" data-title="Désactiver le son"></button>
+            <button class="sound_lyrics" data-title="Paroles"></button>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

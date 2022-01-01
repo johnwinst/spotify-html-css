@@ -1,0 +1,132 @@
+@media screen and (min-width: 2123px){      /* 9 tuiles */  
+    div.albums{
+        grid-template-areas:
+        "tuile1 tuile2 tuile3 tuile4 tuile5 tuile6 tuile7 tuile8 tuile9";
+    }
+    div.favoris{
+        grid-template-areas:
+        "tuile_horizontale1 tuile_horizontale2 tuile_horizontale3 tuile_horizontale4 div.tuile_horizontale5"
+        "tuile_horizontale6 tuile_horizontale7 tuile_horizontale8 tuile_horizontale9 div.tuile_horizontale10";
+    }
+}
+
+@media screen and (max-width: 2122px){      /* 8 tuiles */  
+    div.albums{
+        grid-template-areas:
+        "tuile1 tuile2 tuile3 tuile4 tuile5 tuile6 tuile7 tuile8";
+    }
+    div.favoris{
+        grid-template-areas:
+        "tuile_horizontale1 tuile_horizontale2 tuile_horizontale3 tuile_horizontale5"
+        "tuile_horizontale6 tuile_horizontale7 tuile_horizontale8 tuile_horizontale9";
+    }
+    div.tuile_horizontale10, div.tuile_horizontale5 {display:none;}
+    div.tuile9{display:none;} 
+}
+
+@media screen and (max-width: 1917px){      /* 7 tuiles */  
+    div.albums{
+        grid-template-areas:
+        "tuile1 tuile2 tuile3 tuile4 tuile5 tuile6 tuile7";
+    }
+    div.favoris{
+        grid-template-areas:
+        "tuile_horizontale1 tuile_horizontale2 tuile_horizontale3 tuile_horizontale4"
+        "tuile_horizontale6 tuile_horizontale7 tuile_horizontale8 tuile_horizontale9";
+    }
+    div.tuile_horizontale10, div.tuile_horizontale5 {display:none;}
+    div.tuile9, div.tuile8{display:none} 
+}
+
+@media screen and (max-width: 1714px){    /* 6 tuiles */ 
+    div.albums{
+        grid-template-areas:
+        "tuile1 tuile2 tuile3 tuile4 tuile5 tuile6";
+    }
+    div.favoris{
+        grid-template-areas:
+        "tuile_horizontale1 tuile_horizontale2 tuile_horizontale3 tuile_horizontale4"
+        "tuile_horizontale6 tuile_horizontale7 tuile_horizontale8 tuile_horizontale9";
+    }
+    div.tuile_horizontale10, div.tuile_horizontale5{display:none;}
+    div.tuile9, div.tuile8, div.tuile7{display:none;}
+}
+
+@media screen and (max-width: 1510px){    /* 5 tuiles */ 
+    div.albums{
+        grid-template-areas:
+        "tuile1 tuile2 tuile3 tuile4 tuile5";
+    }
+    div.favoris{
+        grid-template-areas:
+        "tuile_horizontale1 tuile_horizontale2 tuile_horizontale3 tuile_horizontale4"
+        "tuile_horizontale6 tuile_horizontale7 tuile_horizontale8 tuile_horizontale9";
+    }
+    div.tuile_horizontale10, div.tuile_horizontale5{display:none;}
+    div.tuile9, div.tuile8, div.tuile7, div.tuile6{display:none;}
+}
+
+@media screen and (max-width: 1305px){    /* 4 tuiles */ 
+    div.albums{
+        grid-template-areas:
+        "tuile1 tuile2 tuile3 tuile4";
+    }
+    div.favoris{
+        grid-template-areas:
+        "tuile_horizontale1 tuile_horizontale2 tuile_horizontale3"
+        "tuile_horizontale6 tuile_horizontale7 tuile_horizontale8";
+    }
+    div.tuile_horizontale10, div.tuile_horizontale9, div.tuile_horizontale5, div.tuile_horizontale4{display:none;}
+    div.tuile9, div.tuile8, div.tuile7, div.tuile6, div.tuile5{display:none;}
+}
+
+@media screen and (max-width: 1102px){    /* 3 tuiles */ 
+    div.albums{
+        grid-template-areas:
+        "tuile1 tuile2 tuile3";
+    }
+    div.favoris{
+        grid-template-areas:
+        "tuile_horizontale1 tuile_horizontale2"
+        "tuile_horizontale6 tuile_horizontale7";
+    }
+    div.tuile_horizontale10, div.tuile_horizontale9, div.tuile_horizontale8, div.tuile_horizontale5, div.tuile_horizontale4, div.tuile_horizontale3 {display:none;}
+    div.tuile9, div.tuile8, div.tuile7, div.tuile6, div.tuile5, div.tuile4 {display:none;}
+}
+
+@media screen and (max-width: 950px){    /* 2 tuiles */ 
+    div.albums{
+        grid-template-areas:
+        "tuile1 tuile2";
+    }
+    div.favoris{
+        grid-template-areas:
+        "tuile_horizontale1 tuile_horizontale2"
+        "tuile_horizontale6 tuile_horizontale7";
+    }
+    div.tuile_horizontale10, div.tuile_horizontale9, div.tuile_horizontale8, div.tuile_horizontale5, div.tuile_horizontale4, div.tuile_horizontale3{display:none;}
+    div.tuile9, div.tuile8, div.tuile7, div.tuile6, div.tuile5, div.tuile4, div.tuile3 {display:none;}
+}
+
+@media screen and (max-width: 700px){    /* 2 tuiles */ 
+    div.albums{
+        grid-template-areas:
+        "tuile1";
+    }
+    div.favoris{
+        grid-template-areas:
+        "tuile_horizontale1"
+        "tuile_horizontale6";
+    }
+    div.tuile_horizontale10, div.tuile_horizontale9, div.tuile_horizontale8, div.tuile_horizontale7, div.tuile_horizontale5, div.tuile_horizontale4, div.tuile_horizontale3, div.tuile_horizontale2{display:none;}
+    div.tuile9, div.tuile8, div.tuile7, div.tuile6, div.tuile5, div.tuile4, div.tuile3, div.tuile2 {display:none;}
+    div#right_box{display:none;}
+    button.shuffle_btn, button.precedent_btn, button.play_btn,button.next_btn, button.loop_btn{
+        margin: 0 0.5rem 0 0.5rem;
+    } 
+    div.sound_player{
+        width:90%;
+    }
+    div#middle_box{width:50%;}
+    div#left_box{width:50%;}
+}

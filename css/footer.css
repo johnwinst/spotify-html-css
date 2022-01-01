@@ -1,0 +1,194 @@
+:root {
+  --icon-size:1.75rem;
+  --icon-resizing: 1.75;
+}
+
+/* DISPOSITION */ 
+div#box{
+  display: flex;
+  height: 100%;
+}
+
+/* BOÎTES */ 
+div#left_box{
+  width:40vw;
+  display:flex;
+  flex-direction:column;
+  align-items: left;
+  justify-content: center;
+}
+div#middle_box{
+  /* background-color:aqua; */
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+div#right_box{
+  width:40vw;
+  display: flex;
+  flex-direction:column;
+  align-items: right;
+  justify-content: center;
+}
+
+div.singer_content, div.sound_player{
+  margin: 1rem 0 1rem 0;
+}
+
+/* LEFT BOX */
+div.singer_content{
+  /* background-color: blue; */
+  height:auto-fit;
+  width:auto-fit;
+  margin-left:1rem;
+}
+P.footer_title, p.footer_singer{
+  font-weight:var(--font-main-weight);
+  color:white;
+  margin:0;
+}
+p.footer_title{
+  font-size:1rem;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+}
+p.footer_singer{
+  font-size:0.75rem;
+  color:var(--second-color);
+}
+
+
+/* MIDDLE BOX*/ 
+  /* CONTENT */ 
+  div.sound_player{
+    /* background-color: red; */
+    width:75%;
+  }
+
+  /* BUTTONS */ 
+  button.shuffle_btn, button.precedent_btn, button.play_btn,button.next_btn, button.loop_btn, button.sound_volume, button.sound_lyrics{
+    background-color: var(--footer-color);
+    border:none;
+    cursor:pointer;
+    margin: 0 0.5vw 0 0.5vw;
+  } 
+  button.shuffle_btn, button.precedent_btn,button.next_btn, button.loop_btn, button.sound_volume, button.sound_lyrics{
+    background-size: calc(var(--icon-size) /var(--icon-resizing)) calc(var(--icon-size) /var(--icon-resizing));
+    height: calc(var(--icon-size) /var(--icon-resizing));
+    width: calc(var(--icon-size) /var(--icon-resizing));
+  }
+    button.shuffle_btn{
+      background-image: url( '/images/footer/shuffle.png' );
+    }
+    button.precedent_btn{
+      background-image: url( '/images/footer/precedent.png' );
+    }
+    /* PLAY BUTTON */ 
+    button.play_btn{
+      background-image: url( '/images/footer/video.png' );
+      background-size: var(--icon-size) var(--icon-size);
+      height: var(--icon-size) ; 
+      width: var(--icon-size);
+    }
+    button.play_btn:active{
+      background-image: url( '/images/footer/pause.png' );
+    }
+
+    /* NEXT BUTTON */ 
+    button.next_btn{
+      background-image: url( '/images/footer/next.png' );
+    }
+    button.loop_btn{
+      background-image: url( '/images/footer/loop.png' );
+    }
+
+    [data-title]:hover:after {
+      opacity: 1;
+      transition: 0.1s; /* UTILISER AUTRE LANGAGE POUR FAIRE :  SI BOUTON SURVOLÉ 2S ALORS AFFICHÉ DATA-TITLE */
+      visibility: visible;
+      padding:0.5rem;
+      border-radius:calc(var(--border-radius) / 2);
+    }
+    [data-title]:after {
+      content: attr(data-title);
+      background-color: #181818; 
+      color: white;
+      font-size: 120%;
+      position: absolute;
+      left:auto;
+      top:-45px;
+      white-space: nowrap;
+      box-shadow: 0px 5px 3px #121212;
+      visibility: hidden;
+      z-index: 0;
+      font-weight: var(--font-main-weight);
+    }
+    [data-title] {
+        position: relative;
+    }
+
+  /* PROGRESS BAR */ 
+  progress {
+    border-radius: 7px; 
+    width: 90%;
+    height: 0.5rem;
+    border-radius: 1rem;
+  }
+  progress::-webkit-progress-bar {
+    background-color: #535353;
+    border-radius: 1rem;
+  }
+  progress::-webkit-progress-value {
+    background-color: #31b869;
+    border-radius: 1rem;
+  }
+
+  /* SUBCONTENT */ 
+  div.sound_buttons{
+    display:flex;
+    justify-content: center;
+    margin-bottom:1rem;
+    align-items: center;
+  }
+  div.sound_progress{
+    display:flex;
+    justify-content: center;
+  }
+
+
+/* RIGHT BOX */ 
+  progress.sound_volume, button.sound_volume, button.sound_lyrics{
+    float:right;
+    margin-right:1rem;
+  }
+
+  /* BUTTONS */ 
+  button.sound_volume{
+    background-image: url( '/images/footer/sound_volume.png' );
+  }
+  button.sound_volume:active{
+    background-image: url( '/images/footer/sound_volume_off.png' );
+  }
+  button.sound_lyrics{
+    background-image: url( '/images/footer/microphone.png' );
+  }
+
+
+  /* PROGRESS BAR */ 
+  progress.sound_volume {
+    border-radius: 7px; 
+    width: 25%;    
+    height: 0.5rem;
+    border-radius: 1rem;
+    margin-top:0.25rem;
+  }
+  progress.sound_volume::-webkit-progress-bar {
+    background-color: #535353;
+    border-radius: 1rem;
+  }
+  progress.sound_volume::-webkit-progress-value {
+    background-color: #31b869;
+    border-radius: 1rem;
+  }
